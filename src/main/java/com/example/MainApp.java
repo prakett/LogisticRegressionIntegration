@@ -9,8 +9,8 @@ public class MainApp {
 
     public static void main(String[] args) {
         // Path to your Python script and Python executable
-        String pythonScriptPath = "C:\\Users\\ASUS\\IdeaProjects\\LogisticRegressionIntegration\\src\\main\\resources\\model\\model_predict.py"; // Adjust this path
-        String pythonExecutable = "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python310\\python.exe"; // Full path to Python executable
+        String pythonScriptPath = "C:\\Users\\prake\\IdeaProjects\\LogisticRegressionIntegration\\src\\main\\resources\\model\\model_predict.py";
+        String pythonExecutable = "\"C:\\Python\\python.exe\""; // Quoted for spaces in path
 
         // Create a Scanner object to read input from the console
         Scanner scanner = new Scanner(System.in);
@@ -32,7 +32,8 @@ public class MainApp {
             processBuilder.redirectErrorStream(true); // Capture errors and stdout together
 
             // Set the working directory for the process (ensure it’s correct)
-            processBuilder.directory(new java.io.File("C:\\Users\\ASUS\\IdeaProjects\\LogisticRegressionIntegration"));
+            String projectDir = "C:\\Users\\prake\\IdeaProjects\\LogisticRegressionIntegration";
+            processBuilder.directory(new java.io.File(projectDir));
 
             // Start the process
             Process process = processBuilder.start();

@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Define the path to the model folder
-MODEL_PATH = "C:\\Users\\ASUS\\IdeaProjects\\LogisticRegressionIntegration\\src\\main\\resources\\model"
+MODEL_PATH = "C:\\Users\\prake\\IdeaProjects\\LogisticRegressionIntegration\\src\\main\\resources\\model"
 
 # Load the trained model, vectorizer, and scaler
 try:
